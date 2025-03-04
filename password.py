@@ -11,7 +11,8 @@ st.markdown("""
 <style>
     .main {text-align: center;}
     .stTextInput {width: 60% !important; margin: auto;}
-    .stButton button {width: 50%;  !important; margin: auto; background-color:black; color:white; font-size: 18px; }
+    .stButton button {width: 50%;  background-color:black; color:white; font-size: 18px; }
+    .stButton button:hover { background-color:	#E8E8E8; color:black; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -33,12 +34,12 @@ def check_password_strength(password):
     if re.search(r"[A-Z]", password ) and re.search(r"[a-z]", password):
         score += 1
     else:
-        feedback.append("❌ Password should be include ** both uppercase (A-Z) and lowercase (a-z) letters**.")
+        feedback.append("❌ Password should be include **both uppercase (A-Z) and lowercase (a-z) letters**.")
 
     if re.search (r"\d",password):
         score += 1
     else:
-        feedback.append("❌ Password should be include ** at least one number (0-9) **.")
+        feedback.append("❌ Password should be include **at least one number (0-9)**.")
 
 #  special character
     if re.search(r"[!@#$%^&*]", password):
