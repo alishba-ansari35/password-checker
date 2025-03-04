@@ -10,7 +10,7 @@ st.set_page_config(page_title="Password Strenghth Checker By Alishba", page_icon
 st.markdown(""" 
 <style>
     .main {text-align: center;}
-    .stTextInput {width: 60% !important; margin: auto;}
+    .stTextInput {width: 60% !important;}
     .stButton button {width: 50%;  background-color:black; color:white; font-size: 18px; }
     .stButton button:hover { background-color:#A9A9A9; color:black; }
 </style>
