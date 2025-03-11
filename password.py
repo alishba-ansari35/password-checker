@@ -18,7 +18,7 @@ st.markdown("""
 
 
 # page title and description 
-st.title("🔐 Password Strength Generator")
+st.title("🔐 Password Strength Meter")
 st.write("Enter your password below to check its security level.🔍")
 
 # check the function to strength password 
